@@ -72,8 +72,6 @@ public class DivingHelmetItem extends BaseArmorItem {
 		if (!helmet.getItem()
 			.isFireResistant() && lavaDiving)
 			return;
-		if (!entity.isEyeInFluid(FluidTags.WATER) && !lavaDiving)
-			return;
 		if (entity instanceof Player && ((Player) entity).isCreative())
 			return;
 
